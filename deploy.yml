@@ -1,0 +1,23 @@
+name: Shivani CI/CD Pipeline
+
+on:
+ push:
+  branches: [main]
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+  steps:
+
+  - name: Checkout Code
+    uses: actions/checkout@v3
+
+  - name: Build Website
+    run: echo "Building Shivani Portfolio"
+
+  - name: Test Website
+    run: echo "Testing website files"
+
+  - name: Deploy
+    run: echo "Deploying website"
